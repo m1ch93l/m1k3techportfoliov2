@@ -31,19 +31,19 @@ export default {
       cards: [
         {
           title: 'Faculty Evaluation System',
-          photo: 'src/assets/facultyEvaluationSystem.jpg',
+          photo: 'public/facultyEvaluationSystem.jpg',
           link: 'facultyevaluation.online',
           url: 'https://github.com/m1ch93l/faculty-evaluation-system-procedural-php',
         },
         {
           title: 'Stock Card System',
-          photo: 'src/assets/stock-card-system.png',
+          photo: 'public/stock-card-system.png',
           link: 'stock-card-invesys.online',
           url: 'https://github.com/m1ch93l/stock-card-invesys',
         },
         {
           title: 'Class List Group Generator',
-          photo: 'src/assets/classlist-group-generator.png',
+          photo: 'public/classlist-group-generator.png',
           link: 'classlist-group-generator.online',
           url: 'https://github.com/m1ch93l/classlist-group-generator',
         },
