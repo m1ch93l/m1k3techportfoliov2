@@ -1,6 +1,6 @@
 <template>
   <main>
-    <TabsItems />
+    <TabsNavigation />
     <router-view></router-view>
   </main>
 </template>
