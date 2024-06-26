@@ -1,9 +1,10 @@
 <template>
-  <v-app>
-    <TabsNavigation />
-  </v-app>
+  <main>
+    <TabsItems />
+    <router-view></router-view>
+  </main>
 </template>
 
-<script setup>
-//
+<script>
+
 </script>
