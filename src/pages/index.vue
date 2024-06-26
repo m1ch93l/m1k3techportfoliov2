@@ -8,6 +8,7 @@
       <v-col class="text-center align-content-center" cols="6">
         <div class="text-h4 text-uppercase text-medium-emphasis">hello, coders, i'm</div>
         <div class="text-h2 text-uppercase font-weight-bold">michael b. bañaria</div>
+        <div class="text-center text-uppercase text-medium-emphasis" style="font-family: 'Times New Roman', Times, serif;">tech educator | developer</div>
       </v-col>
     </v-row>
   </v-container>
