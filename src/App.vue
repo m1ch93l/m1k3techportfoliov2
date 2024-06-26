@@ -1,9 +1,9 @@
 <template>
   <v-app>
+    <TabsNavigation />
     <v-main>
       <router-view />
     </v-main>
-    <ButtomNavigation />
   </v-app>
 </template>
 
