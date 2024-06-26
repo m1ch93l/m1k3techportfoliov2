@@ -3,7 +3,7 @@
   <v-container class="fill-height" style="min-height: 650px" fluid>
     <v-row>
       <v-col class="text-center" cols-lg="6" cols-sm="12">
-        <v-avatar image="https://avatars.githubusercontent.com/u/91449532?v=4" size="450"></v-avatar>
+        <v-avatar image="https://avatars.githubusercontent.com/u/91449532?v=4" size="320"></v-avatar>
       </v-col>
       <v-col class="text-center align-content-center" cols-lg="6" cols-sm="12">
         <div class="text-h4 text-uppercase text-medium-emphasis">hello, coders, i'm</div>
