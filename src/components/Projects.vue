@@ -1,3 +1,54 @@
 <template>
-  <div class="text-h1">hi</div>
+  <v-container fluid>
+    <v-row>
+      <v-col v-for="(card, index) in cards" :key="index" cols="12" md="4">
+        <v-card class="mx-auto" max-width="344">
+          <v-img height="200px" :src="card.photo" cover></v-img>
+
+          <v-card-title>
+            {{ card.title }}
+          </v-card-title>
+
+          <v-card-subtitle>
+            {{ card.link }}
+          </v-card-subtitle>
+
+          <v-card-actions>
+            <v-btn color="orange-lighten-2" text="Explore" :href="card.url"></v-btn>
+
+            <v-spacer></v-spacer>
+          </v-card-actions>
+        </v-card>
+      </v-col>
+    </v-row>
+  </v-container>
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      cards: [
+        {
+          title: 'Faculty Evaluation System',
+          photo: 'src/assets/facultyEvaluationSystem.jpg',
+          link: 'facultyevaluation.online',
+          url: 'https://github.com/m1ch93l/faculty-evaluation-system-procedural-php',
+        },
+        {
+          title: 'Stock Card System',
+          photo: 'src/assets/stock-card-system.png',
+          link: 'stock-card-invesys.online',
+          url: 'https://github.com/m1ch93l/stock-card-invesys',
+        },
+        {
+          title: 'Class List Group Generator',
+          photo: 'src/assets/classlist-group-generator.png',
+          link: 'classlist-group-generator.online',
+          url: 'https://github.com/m1ch93l/classlist-group-generator',
+        },
+      ],
+    };
+  },
+};
+</script>

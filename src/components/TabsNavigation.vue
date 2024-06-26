@@ -25,17 +25,17 @@ export default {
     tab: 'tab-1',
     tabs: [
       {
-        icon: 'mdi-book-open-page-variant',
+        icon: 'mdi-account',
         text: 'Profile',
         value: 'tab-1',
       },
       {
-        icon: 'mdi-handshake-outline',
+        icon: 'mdi-coffee',
         text: 'Projects',
         value: 'tab-2',
       },
       {
-        icon: 'mdi-license',
+        icon: 'mdi-phone',
         text: 'Contact',
         value: 'tab-3',
       },
