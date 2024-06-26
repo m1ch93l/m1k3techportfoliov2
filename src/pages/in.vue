@@ -1,7 +1,7 @@
 <template>
-  <ButtomNavigation />
+  <HelloWorld />
 </template>
 
 <script setup>
-//
+  //
 </script>
