@@ -2,23 +2,25 @@
   <v-container fluid>
     <v-row>
       <v-col v-for="(card, index) in cards" :key="index" cols="12" md="4">
-        <v-card class="mx-auto" max-width="344">
-          <v-img height="200px" :src="card.photo" cover></v-img>
+        <v-hover v-slot="{ isHovering, props }">
+          <v-card :class="{ 'on-hover': isHovering, 'mx-auto': true }" :elevation="isHovering ? 12 : 2" v-bind="props" max-width="344">
+            <v-img height="200px" :src="card.photo" cover></v-img>
 
-          <v-card-title>
-            {{ card.title }}
-          </v-card-title>
+            <v-card-title>
+              {{ card.title }}
+            </v-card-title>
 
-          <v-card-subtitle>
-            {{ card.link }}
-          </v-card-subtitle>
+            <v-card-subtitle>
+              {{ card.link }}
+            </v-card-subtitle>
 
-          <v-card-actions>
-            <v-btn color="orange-lighten-2" text="Explore" :href="card.url"></v-btn>
+            <v-card-actions>
+              <v-btn color="orange-lighten-2" text="Explore" :href="card.url"></v-btn>
 
-            <v-spacer></v-spacer>
-          </v-card-actions>
-        </v-card>
+              <v-spacer></v-spacer>
+            </v-card-actions>
+          </v-card>
+        </v-hover>
       </v-col>
     </v-row>
   </v-container>
@@ -48,7 +50,22 @@ export default {
           url: 'https://github.com/m1ch93l/classlist-group-generator',
         },
       ],
+      transparent: 'rgba(255, 255, 255, 0)',
     };
   },
 };
 </script>
+
+<style scoped>
+.v-card {
+  transition: opacity .4s ease-in-out;
+}
+
+.v-card:not(.on-hover) {
+  opacity: 0.6;
+}
+
+.show-btns {
+  color: rgba(255, 255, 255, 1) !important;
+}
+</style>
